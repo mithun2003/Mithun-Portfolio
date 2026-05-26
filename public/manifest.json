@@ -19,13 +19,13 @@
   "categories": ["business", "technology"],
   "screenshots": [
     {
-      "src": "/mithun_hero.png",
+      "src": "/mithun_hero.webp",
       "sizes": "540x720",
       "type": "image/png",
       "form_factor": "narrow"
     },
     {
-      "src": "/mithun_hero.png",
+      "src": "/mithun_hero.webp",
       "sizes": "1280x720",
       "type": "image/png",
       "form_factor": "wide"

@@ -71,7 +71,7 @@ export const metadata: Metadata = {
     siteName: 'Mithun Thomas',
     images: [
       {
-        url: 'https://mithunthomas.vercel.app/mithun_hero.png',
+        url: 'https://mithunthomas.vercel.app/mithun_hero.webp',
         width: 1200,
         height: 630,
         alt: 'Mithun Thomas - Full Stack Developer',
@@ -83,7 +83,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Mithun Thomas — Full Stack Developer & AI Specialist',
     description: 'Full Stack Developer specializing in building modern web applications with React, Next.js, and AI.',
-    images: ['https://mithunthomas.vercel.app/mithun_hero.png'],
+    images: ['https://mithunthomas.vercel.app/mithun_hero.webp'],
     creator: '@mithun_thomas._',
   },
   icons: {

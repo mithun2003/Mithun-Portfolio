@@ -124,10 +124,10 @@ mithun-portfolio/
 │   ├── favicon.svg           # Favicon
 │   ├── robots.txt            # Robots.txt for crawlers
 │   ├── manifest.json         # PWA manifest
-│   ├── mithun_hero.png       # Hero image
-│   ├── mithun_about.png      # About section image
+│   ├── mithun_hero.webp       # Hero image
+│   ├── mithun_about.webp      # About section image
 │   ├── signsync-hero.svg     # SignSync project image
-│   └── artistkashi-hero.png  # ArtistKashi project image
+│   └── artistkashi-hero.webp  # ArtistKashi project image
 ├── next.config.mjs           # Next.js configuration
 ├── tailwind.config.ts        # Tailwind CSS config
 ├── tsconfig.json             # TypeScript config
@@ -231,7 +231,7 @@ export const projects: Project[] = [
     year: '2024',
     description: 'Project description',
     tech: ['React', 'Next.js', 'TypeScript'],
-    image: '/project-image.png',
+    image: '/project-image.webp',
     link: 'https://project-link.com',
   },
   // ... more projects
@@ -250,8 +250,8 @@ Edit `styles/globals.css` to change the color scheme:
 
 ### Update Images
 Replace images in `/public/`:
-- `mithun_hero.png` - Hero section image
-- `mithun_about.png` - About section image
+- `mithun_hero.webp` - Hero section image
+- `mithun_about.webp` - About section image
 - `favicon.svg` - Website favicon
 
 ---
