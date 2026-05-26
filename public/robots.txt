@@ -1,0 +1,21 @@
+# Robots.txt for Mithun Thomas Portfolio
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /.next/
+Disallow: /node_modules/
+
+# Sitemap
+Sitemap: https://mithunthomas.dev/sitemap.xml
+
+# Crawl delay
+Crawl-delay: 1
+
+# User-agents specific rules
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1

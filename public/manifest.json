@@ -1,0 +1,62 @@
+{
+  "name": "Mithun Thomas - Full Stack Developer",
+  "short_name": "Mithun Thomas",
+  "description": "Full Stack Developer specializing in building modern web applications with React, Next.js, Node.js, and AI integration.",
+  "start_url": "https://mithunthomas.dev",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0A0A0A",
+  "theme_color": "#000000",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ],
+  "categories": ["business", "technology"],
+  "screenshots": [
+    {
+      "src": "/mithun_hero.png",
+      "sizes": "540x720",
+      "type": "image/png",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "/mithun_hero.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "View My Work",
+      "short_name": "Work",
+      "description": "View my recent projects and work",
+      "url": "https://mithunthomas.dev/#work",
+      "icons": [
+        {
+          "src": "/favicon.svg",
+          "sizes": "any",
+          "type": "image/svg+xml"
+        }
+      ]
+    },
+    {
+      "name": "Contact Me",
+      "short_name": "Contact",
+      "description": "Get in touch with me",
+      "url": "https://mithunthomas.dev/#contact",
+      "icons": [
+        {
+          "src": "/favicon.svg",
+          "sizes": "any",
+          "type": "image/svg+xml"
+        }
+      ]
+    }
+  ]
+}
