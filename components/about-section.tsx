@@ -4,13 +4,7 @@ import { motion } from 'framer-motion'
 import { Github, Linkedin } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
-
-const stats = [
-  { value: '3+', label: 'YEARS OF EXPERIENCE' },
-  { value: '15+', label: 'PROJECTS SHIPPED' },
-  { value: '10+', label: 'HAPPY CLIENTS' },
-  { value: '5+', label: 'TECHNOLOGIES' },
-]
+import { stats, personalInfo } from '@/lib/data'
 
 export function AboutSection() {
   return (
@@ -65,7 +59,7 @@ export function AboutSection() {
               className="text-2xl md:text-3xl font-light leading-relaxed"
             >
               <span className="text-muted-foreground">&ldquo;</span>
-              I build systems that don&apos;t just work — they scale, stay fast, and stay clean under pressure.
+              {personalInfo.bio}
               <span className="text-muted-foreground">&rdquo;</span>
             </motion.blockquote>
 
@@ -76,20 +70,7 @@ export function AboutSection() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="text-muted-foreground leading-relaxed"
             >
-              3+ years of experience building full-stack applications for clients worldwide. 
-              From B2B SaaS platforms to e-commerce solutions, I work end-to-end: architecture, 
-              backend, front-end, and deployment.
-            </motion.p>
-
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              className="text-muted-foreground leading-relaxed"
-            >
-              Core stack: React, Next.js, Node.js, Python, PostgreSQL. Also fluent in TypeScript, 
-              AWS, Docker, and CI/CD pipelines. I care about the whole system — not just the feature.
+              {personalInfo.aboutDetailed}
             </motion.p>
 
             <motion.div
@@ -100,7 +81,7 @@ export function AboutSection() {
               className="flex gap-4"
             >
               <Link
-                href="https://github.com/mithun2003"
+                href={personalInfo.github}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 border border-border px-5 py-3 rounded-full text-sm font-medium hover:bg-foreground hover:text-background transition-colors"
@@ -109,7 +90,7 @@ export function AboutSection() {
                 GITHUB
               </Link>
               <Link
-                href="https://www.linkedin.com/in/mithunthomas3897/"
+                href={personalInfo.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 border border-border px-5 py-3 rounded-full text-sm font-medium hover:bg-foreground hover:text-background transition-colors"
@@ -126,16 +107,23 @@ export function AboutSection() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="relative"
+            className="relative overflow-hidden"
           >
-            <div className="relative aspect-[3/4] max-w-md mx-auto">
-              <Image
+            <div className="relative aspect-3/4 max-w-md mx-auto overflow-hidden rounded-2xl">
+              {/* <Image
                 src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=600&h=800&fit=crop&crop=face"
-                alt="Mithun Thomas"
+                alt={personalInfo.name}
                 fill
                 className="object-cover rounded-2xl grayscale"
+              /> */}
+              <Image
+                src="/mithun_about.png"
+                alt={personalInfo.name}
+                fill
+                className="object-cover rounded-2xl grayscale"
+                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 500px"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent rounded-2xl" />
+              <div className="absolute inset-0 bg-linear-to-t from-background via-transparent to-transparent rounded-2xl" />
             </div>
           </motion.div>
         </div>

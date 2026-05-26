@@ -1,8 +1,9 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { ArrowUpRight, Mail, MapPin, Clock } from 'lucide-react'
+import { ArrowUpRight, Mail, MapPin, Clock, MessageCircle, Phone, Linkedin } from 'lucide-react'
 import Link from 'next/link'
+import { personalInfo } from '@/lib/data'
 
 export function ContactSection() {
   return (
@@ -16,7 +17,7 @@ export function ContactSection() {
           transition={{ duration: 0.5 }}
           className="text-sm tracking-widest text-muted-foreground mb-4"
         >
-          05 / CONTACT
+          06 / CONTACT
         </motion.div>
 
         <motion.h2
@@ -49,19 +50,29 @@ export function ContactSection() {
           className="flex flex-wrap gap-4 mb-20"
         >
           <Link
-            href="mailto:mithunthomas3897@gmail.com"
+            href={`mailto:${personalInfo.email}`}
             className="flex items-center gap-2 bg-foreground text-background px-6 py-4 rounded-full text-sm font-medium hover:bg-foreground/90 transition-colors"
           >
             <Mail className="w-4 h-4" />
-            SEND A MESSAGE
+            EMAIL ME
             <ArrowUpRight className="w-4 h-4" />
           </Link>
           <Link
-            href="https://www.linkedin.com/in/mithunthomas3897/"
+            href={personalInfo.whatsapp}
+            target="_blank"
+            className="flex items-center gap-2 bg-[#25D366] text-white px-6 py-4 rounded-full text-sm font-medium hover:bg-[#25D366]/90 transition-colors"
+          >
+            <MessageCircle className="w-4 h-4" />
+            WHATSAPP
+            <ArrowUpRight className="w-4 h-4" />
+          </Link>
+          <Link
+            href={personalInfo.linkedin}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 border border-border px-6 py-4 rounded-full text-sm font-medium hover:bg-foreground hover:text-background transition-colors"
           >
+            <Linkedin className="w-4 h-4" />
             LINKEDIN
             <ArrowUpRight className="w-4 h-4" />
           </Link>
@@ -78,23 +89,23 @@ export function ContactSection() {
           <div className="bg-background p-8">
             <div className="flex items-center gap-2 text-muted-foreground mb-2">
               <MapPin className="w-4 h-4" />
-              <span className="text-xs tracking-widest">LOCATION</span>
+              <span className="text-xs tracking-widest uppercase">Location</span>
             </div>
-            <p className="text-lg font-medium">Remote · Worldwide</p>
+            <p className="text-lg font-medium">{personalInfo.location}</p>
           </div>
           <div className="bg-background p-8">
             <div className="flex items-center gap-2 text-muted-foreground mb-2">
-              <Clock className="w-4 h-4" />
-              <span className="text-xs tracking-widest">RESPONSE</span>
+              <Phone className="w-4 h-4" />
+              <span className="text-xs tracking-widest uppercase">Phone</span>
             </div>
-            <p className="text-lg font-medium">Within 24 hours</p>
+            <p className="text-lg font-medium">{personalInfo.phone}</p>
           </div>
           <div className="bg-background p-8">
             <div className="flex items-center gap-2 text-muted-foreground mb-2">
               <span className="w-2 h-2 bg-green-500 rounded-full" />
-              <span className="text-xs tracking-widest">STATUS</span>
+              <span className="text-xs tracking-widest uppercase">Status</span>
             </div>
-            <p className="text-lg font-medium">Available for projects</p>
+            <p className="text-lg font-medium">{personalInfo.availability}</p>
           </div>
         </motion.div>
       </div>

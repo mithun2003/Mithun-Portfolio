@@ -1,46 +1,9 @@
-'use client'
-
 import { motion, useScroll, useTransform } from 'framer-motion'
 import { ArrowUpRight, BookOpen, Clock, Eye } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useRef } from 'react'
-
-const blogs = [
-  {
-    id: 1,
-    title: 'Building Scalable APIs with FastAPI and PostgreSQL',
-    excerpt: 'Learn how to build production-ready APIs with proper authentication, rate limiting, and database optimization techniques.',
-    date: 'Jan 15, 2024',
-    readTime: '8 min read',
-    views: '2.4K',
-    tags: ['Python', 'FastAPI', 'PostgreSQL'],
-    image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&h=500&fit=crop',
-    link: 'https://mithun003.medium.com/',
-  },
-  {
-    id: 2,
-    title: 'Modern React Patterns Every Developer Should Know',
-    excerpt: 'Exploring advanced React patterns including compound components, render props, and custom hooks for cleaner code.',
-    date: 'Dec 28, 2023',
-    readTime: '12 min read',
-    views: '5.1K',
-    tags: ['React', 'TypeScript', 'Patterns'],
-    image: 'https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=800&h=500&fit=crop',
-    link: 'https://mithun003.medium.com/',
-  },
-  {
-    id: 3,
-    title: 'Mastering Git: Advanced Techniques for Teams',
-    excerpt: 'From rebasing strategies to advanced branching workflows - everything you need for professional Git usage.',
-    date: 'Nov 10, 2023',
-    readTime: '10 min read',
-    views: '3.8K',
-    tags: ['Git', 'DevOps', 'Workflow'],
-    image: 'https://images.unsplash.com/photo-1556075798-4825dfaaf498?w=800&h=500&fit=crop',
-    link: 'https://mithun003.medium.com/',
-  },
-]
+import { blogs, personalInfo } from '@/lib/data'
 
 function BlogCard({ blog, index }: { blog: typeof blogs[0]; index: number }) {
   const ref = useRef<HTMLDivElement>(null)
@@ -180,7 +143,7 @@ export function BlogSection() {
           className="text-center"
         >
           <Link
-            href="https://mithun003.medium.com/"
+            href={personalInfo.medium}
             target="_blank"
             className="group relative inline-flex items-center gap-3 hoverable"
           >

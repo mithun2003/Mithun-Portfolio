@@ -4,8 +4,7 @@ import { motion } from 'framer-motion'
 import { ArrowUpRight, ChevronDown } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
-
-const techStack = ['REACT', 'NEXT.JS', 'NODE.JS', 'TYPESCRIPT', 'PYTHON', 'AWS']
+import { techStack, personalInfo } from '@/lib/data'
 
 export function HeroSection() {
   return (
@@ -27,26 +26,26 @@ export function HeroSection() {
               className="flex items-center gap-3"
             >
               <span className="w-2 h-2 bg-foreground rounded-full animate-pulse" />
-              <span className="text-sm tracking-widest text-muted-foreground">AVAILABLE FOR WORK</span>
+              <span className="text-sm tracking-widest text-muted-foreground uppercase">{personalInfo.availability}</span>
             </motion.div>
 
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.1 }}
-              className="text-sm tracking-widest text-muted-foreground"
+              className="text-sm tracking-widest text-muted-foreground uppercase"
             >
-              REMOTE · WORLDWIDE
+              {personalInfo.workType}
             </motion.div>
 
             <motion.h1
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-5xl md:text-7xl lg:text-8xl font-bold leading-none"
+              className="text-5xl md:text-6xl lg:text-8xl font-bold leading-none"
             >
-              <span className="block">Mithun</span>
-              <span className="block text-muted-foreground">Thomas</span>
+              <span className="block">{personalInfo.firstName}</span>
+              <span className="block text-muted-foreground">{personalInfo.lastName}</span>
             </motion.h1>
 
             <motion.p
@@ -55,7 +54,7 @@ export function HeroSection() {
               transition={{ duration: 0.5, delay: 0.3 }}
               className="text-lg md:text-xl text-muted-foreground max-w-md"
             >
-              Full Stack Developer — building scalable web applications that deliver exceptional user experiences.
+              {personalInfo.bio}
             </motion.p>
 
             <motion.div
@@ -101,16 +100,24 @@ export function HeroSection() {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="relative hidden lg:block"
+            className="relative overflow-hidden"
           >
-            <div className="relative w-full aspect-square max-w-lg mx-auto">
-              <div className="absolute inset-0 bg-gradient-to-br from-muted/20 via-muted/10 to-transparent rounded-3xl" />
-              <Image
+            <div className="relative w-full aspect-square max-w-md lg:max-w-lg mx-auto overflow-hidden rounded-3xl">
+              <div className="absolute inset-0 bg-linear-to-t from-muted/20 via-muted/10 to-transparent rounded-3xl" />
+              {/* <Image
                 src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=800&fit=crop&crop=face"
-                alt="Mithun Thomas"
+                alt={personalInfo.name}
                 fill
                 className="object-cover rounded-3xl grayscale hover:grayscale-0 transition-all duration-500"
                 priority
+              /> */}
+              <Image
+                src= "/mithun_hero.png"
+                alt={personalInfo.name}
+                fill
+                className="object-cover rounded-3xl grayscale hover:grayscale-0 transition-all duration-500"
+                priority
+                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 600px"
               />
             </div>
           </motion.div>
@@ -121,7 +128,7 @@ export function HeroSection() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 1 }}
-          className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
+          className="absolute bottom-0 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
         >
           <span className="text-xs tracking-widest text-muted-foreground">SCROLL</span>
           <ChevronDown className="w-5 h-5 text-muted-foreground animate-bounce" />

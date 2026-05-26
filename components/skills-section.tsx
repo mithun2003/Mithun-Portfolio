@@ -1,30 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-
-const skillCategories = [
-  {
-    title: 'Frontend Development',
-    skills: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS', 'Redux', 'Framer Motion'],
-  },
-  {
-    title: 'Backend Development',
-    skills: ['Node.js', 'Python', 'Express.js', 'FastAPI', 'GraphQL', 'REST APIs'],
-  },
-  {
-    title: 'Database & Cloud',
-    skills: ['PostgreSQL', 'MongoDB', 'Redis', 'AWS', 'Docker', 'Kubernetes'],
-  },
-  {
-    title: 'Tools & Others',
-    skills: ['Git', 'CI/CD', 'Linux', 'Figma', 'Agile', 'Testing'],
-  },
-]
-
-const marqueeItems = [
-  'React', 'Next.js', 'Node.js', 'TypeScript', 'Python', 'PostgreSQL', 
-  'AWS', 'Docker', 'GraphQL', 'MongoDB', 'Redis', 'Tailwind CSS'
-]
+import { skillCategories, marqueeItems } from '@/lib/data'
 
 export function SkillsSection() {
   return (

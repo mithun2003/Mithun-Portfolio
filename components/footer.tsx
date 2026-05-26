@@ -1,21 +1,9 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Github, Linkedin, ArrowUp } from 'lucide-react'
+import { ArrowUp } from 'lucide-react'
 import Link from 'next/link'
-
-const footerLinks = [
-  { name: 'ABOUT', href: '#about' },
-  { name: 'PROJECTS', href: '#work' },
-  { name: 'EXPERIENCE', href: '#experience' },
-  { name: 'SKILLS', href: '#skills' },
-  { name: 'CONTACT', href: '#contact' },
-]
-
-const socialLinks = [
-  { icon: Github, href: 'https://github.com/mithun2003', label: 'GitHub' },
-  { icon: Linkedin, href: 'https://www.linkedin.com/in/mithunthomas3897/', label: 'LinkedIn' },
-]
+import { personalInfo, socialLinks, footerLinks } from '@/lib/data'
 
 export function Footer() {
   const scrollToTop = () => {
@@ -26,8 +14,8 @@ export function Footer() {
     <footer className="bg-card/50 py-16 relative">
       {/* Large background text */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="text-[20vw] font-bold text-muted-foreground/5 whitespace-nowrap">
-          MITHUNTHOMAS
+        <div className="text-[20vw] font-bold text-muted-foreground/5 whitespace-nowrap uppercase">
+          {personalInfo.firstName}{personalInfo.lastName}
         </div>
       </div>
 
@@ -41,12 +29,12 @@ export function Footer() {
             transition={{ duration: 0.5 }}
             className="flex items-center gap-3"
           >
-            <div className="w-12 h-12 rounded-full bg-gradient-to-br from-green-400 via-emerald-500 to-teal-500 flex items-center justify-center">
-              <span className="text-lg font-bold text-white">MT</span>
+            <div className="w-10 h-10 rounded-full bg-foreground flex items-center justify-center">
+              <span className="text-sm font-bold text-background">MT</span>
             </div>
             <div>
-              <p className="font-semibold">MITHUNTHOMAS</p>
-              <p className="text-xs text-muted-foreground">Full Stack Developer</p>
+              <p className="font-semibold tracking-tight uppercase">{personalInfo.firstName}<span className="text-muted-foreground">{personalInfo.lastName}</span></p>
+              <p className="text-xs text-muted-foreground">{personalInfo.role}</p>
             </div>
           </motion.div>
 
@@ -101,10 +89,10 @@ export function Footer() {
           className="flex flex-col md:flex-row justify-between items-center gap-4 pt-8 border-t border-border"
         >
           <p className="text-xs text-muted-foreground">
-            © 2024 Mithun Thomas. All rights reserved.
+            © {new Date().getFullYear()} {personalInfo.name}. All rights reserved.
           </p>
           <p className="text-xs text-muted-foreground">
-            Designed & Developed by Mithun
+            Designed & Developed by {personalInfo.firstName}
           </p>
         </motion.div>
       </div>
