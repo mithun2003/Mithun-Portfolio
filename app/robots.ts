@@ -20,6 +20,6 @@ export default function robots(): MetadataRoute.Robots {
         crawlDelay: 1,
       },
     ],
-    sitemap: 'https://mithunthomas.dev/sitemap.xml',
+    sitemap: 'https://mithunthomas.vercel.app/sitemap.xml',
   }
 }

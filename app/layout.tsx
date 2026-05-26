@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     'Kerala',
     'Remote Developer'
   ],
-  authors: [{ name: 'Mithun Thomas', url: 'https://mithunthomas.dev' }],
+  authors: [{ name: 'Mithun Thomas', url: 'https://mithunthomas.vercel.app' }],
   creator: 'Mithun Thomas',
   publisher: 'Mithun Thomas',
   formatDetection: {
@@ -58,20 +58,20 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: 'https://mithunthomas.dev',
+    canonical: 'https://mithunthomas.vercel.app',
     languages: {
-      'en-US': 'https://mithunthomas.dev',
+      'en-US': 'https://mithunthomas.vercel.app',
     },
   },
   openGraph: {
     title: 'Mithun Thomas — Full Stack Developer & AI Specialist',
     description: 'Full Stack Developer specializing in building modern web applications with React, Next.js, Node.js, and AI integration.',
     type: 'website',
-    url: 'https://mithunthomas.dev',
+    url: 'https://mithunthomas.vercel.app',
     siteName: 'Mithun Thomas',
     images: [
       {
-        url: 'https://mithunthomas.dev/mithun_hero.png',
+        url: 'https://mithunthomas.vercel.app/mithun_hero.png',
         width: 1200,
         height: 630,
         alt: 'Mithun Thomas - Full Stack Developer',
@@ -83,7 +83,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Mithun Thomas — Full Stack Developer & AI Specialist',
     description: 'Full Stack Developer specializing in building modern web applications with React, Next.js, and AI.',
-    images: ['https://mithunthomas.dev/mithun_hero.png'],
+    images: ['https://mithunthomas.vercel.app/mithun_hero.png'],
     creator: '@mithun_thomas._',
   },
   icons: {
@@ -117,8 +117,8 @@ export default function RootLayout({
               '@context': 'https://schema.org',
               '@type': 'Person',
               name: 'Mithun Thomas',
-              url: 'https://mithunthomas.dev',
-              image: 'https://mithunthomas.dev/mithun_hero.png',
+              url: 'https://mithunthomas.vercel.app',
+              image: 'https://mithunthomas.vercel.app/mithun_hero.png',
               description: 'Full Stack Developer specializing in building modern web applications with React, Next.js, Node.js, and AI integration.',
               jobTitle: 'Full Stack Developer',
               location: {
@@ -144,7 +144,7 @@ export default function RootLayout({
               '@context': 'https://schema.org',
               '@type': 'WebSite',
               name: 'Mithun Thomas - Full Stack Developer',
-              url: 'https://mithunthomas.dev',
+              url: 'https://mithunthomas.vercel.app',
               description: 'Portfolio of Mithun Thomas, Full Stack Developer',
               author: {
                 '@type': 'Person',
@@ -154,7 +154,7 @@ export default function RootLayout({
                 '@type': 'SearchAction',
                 target: {
                   '@type': 'EntryPoint',
-                  urlTemplate: 'https://mithunthomas.dev/?q={search_term_string}',
+                  urlTemplate: 'https://mithunthomas.vercel.app/?q={search_term_string}',
                 },
                 'query-input': 'required name=search_term_string',
               },

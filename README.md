@@ -8,7 +8,7 @@
 
 A modern, high-performance portfolio website showcasing Full Stack Development and AI integration expertise. Built with cutting-edge web technologies and optimized for SEO, performance, and user experience.
 
-**🌐 Live Site:** [mithunthomas.dev](https://mithunthomas.dev)
+**🌐 Live Site:** [mithunthomas](https://mithunthomas.vercel.app)
 
 ---
 
@@ -464,7 +464,7 @@ This project is open source and available under the MIT License. See the LICENSE
 ## 👤 About Me
 
 **Mithun Thomas** - Full Stack Developer & AI Specialist
-- 🌐 Portfolio: [mithunthomas.dev](https://mithunthomas.dev)
+- 🌐 Portfolio: [mithunthomas.dev](https://mithunthomas.vercel.app)
 - 💼 LinkedIn: [mithunthomas3897](https://linkedin.com/in/mithunthomas3897)
 - 🐙 GitHub: [mithun2003](https://github.com/mithun2003)
 - 📧 Email: mithunthomas3897@gmail.com

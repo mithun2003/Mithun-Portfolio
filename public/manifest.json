@@ -2,7 +2,7 @@
   "name": "Mithun Thomas - Full Stack Developer",
   "short_name": "Mithun Thomas",
   "description": "Full Stack Developer specializing in building modern web applications with React, Next.js, Node.js, and AI integration.",
-  "start_url": "https://mithunthomas.dev",
+  "start_url": "https://mithunthomas.vercel.app",
   "scope": "/",
   "display": "standalone",
   "background_color": "#0A0A0A",
@@ -36,7 +36,7 @@
       "name": "View My Work",
       "short_name": "Work",
       "description": "View my recent projects and work",
-      "url": "https://mithunthomas.dev/#work",
+      "url": "https://mithunthomas.vercel.app/#work",
       "icons": [
         {
           "src": "/favicon.svg",
@@ -49,7 +49,7 @@
       "name": "Contact Me",
       "short_name": "Contact",
       "description": "Get in touch with me",
-      "url": "https://mithunthomas.dev/#contact",
+      "url": "https://mithunthomas.vercel.app/#contact",
       "icons": [
         {
           "src": "/favicon.svg",

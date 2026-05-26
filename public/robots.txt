@@ -6,7 +6,7 @@ Disallow: /.next/
 Disallow: /node_modules/
 
 # Sitemap
-Sitemap: https://mithunthomas.dev/sitemap.xml
+Sitemap: https://mithunthomas.vercel.app/sitemap.xml
 
 # Crawl delay
 Crawl-delay: 1
