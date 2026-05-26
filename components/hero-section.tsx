@@ -112,11 +112,12 @@ export function HeroSection() {
                 priority
               /> */}
               <Image
-                src= "/mithun_hero.png"
+                src= "/mithun_hero.webp"
                 alt={personalInfo.name}
                 fill
                 className="object-cover rounded-3xl grayscale hover:grayscale-0 transition-all duration-500"
                 priority
+                quality={85}
                 sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 600px"
               />
             </div>

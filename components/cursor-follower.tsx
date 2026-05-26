@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react'
 import { motion, useMotionValue, useSpring } from 'framer-motion'
 
 export function CursorFollower() {
+  const [isClient, setIsClient] = useState(false)
   const [isVisible, setIsVisible] = useState(false)
   const [isHovering, setIsHovering] = useState(false)
   
@@ -15,6 +16,15 @@ export function CursorFollower() {
   const cursorYSpring = useSpring(cursorY, springConfig)
   
   useEffect(() => {
+    // Only run on client
+    setIsClient(true)
+    
+    // Hide on touch devices
+    if ('ontouchstart' in window) {
+      setIsClient(false)
+      return
+    }
+    
     const moveCursor = (e: MouseEvent) => {
       cursorX.set(e.clientX)
       cursorY.set(e.clientY)
@@ -57,8 +67,8 @@ export function CursorFollower() {
     }
   }, [cursorX, cursorY])
   
-  // Hide on touch devices
-  if (typeof window !== 'undefined' && 'ontouchstart' in window) {
+  // Don't render on server or touch devices
+  if (!isClient) {
     return null
   }
   

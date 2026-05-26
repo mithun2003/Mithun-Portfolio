@@ -117,10 +117,11 @@ export function AboutSection() {
                 className="object-cover rounded-2xl grayscale"
               /> */}
               <Image
-                src="/mithun_about.png"
+                src="/mithun_about.webp"
                 alt={personalInfo.name}
                 fill
                 className="object-cover rounded-2xl grayscale"
+                quality={85}
                 sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 500px"
               />
               <div className="absolute inset-0 bg-linear-to-t from-background via-transparent to-transparent rounded-2xl" />

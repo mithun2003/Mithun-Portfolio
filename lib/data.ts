@@ -90,7 +90,7 @@ export const projects: Project[] = [
     year: '2024',
     description: 'A premium platform for artists to showcase and sell their work. Features include high-resolution image galleries, secure payments, and personalized artist profiles.',
     tech: ['REACT', 'NODE.JS', 'MONGODB', 'STRIPE'],
-    image: '/artistkashi-hero.png' ,
+    image: '/artistkashi-hero.webp' ,
     link: 'https://github.com/mithun2003/artistkashi',
   },
   {
@@ -100,7 +100,7 @@ export const projects: Project[] = [
     year: '2024',
     description: 'Full-stack Angular 21 application bridging communication gaps between sign language users and others. Uses MediaPipe for real-time ASL gesture detection (A-Z) with 90%+ confidence, text-to-sign translation, and voice feedback.',
     tech: ['ANGULAR', 'MEDIAPIPE', 'TAILWIND V4', 'NODE.JS'],
-    image: '/signsync-hero.png',
+    image: '/signsync-hero.webp',
     link: 'https://github.com/mithun2003/SignSyn'
   },
   {
@@ -110,7 +110,7 @@ export const projects: Project[] = [
     year: '2024',
     description: 'Advanced AI tool powered by deep learning models to intelligently identify and remove watermarks from images while preserving quality.',
     tech: ['PYTHON', 'PYTORCH', 'FASTAPI', 'OPENCV'],
-    image: '/watermark-hero.png',
+    image: '/watermark-hero.webp',
     link: 'https://github.com/mithun2003/gamma-ai-watermark-remover',
   },
   {

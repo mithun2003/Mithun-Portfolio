@@ -107,7 +107,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className="bg-background overflow-x-hidden selection:bg-accent/30 selection:text-foreground">
+    <html lang="en" className="bg-background overflow-x-hidden selection:bg-accent/30 selection:text-foreground" suppressHydrationWarning>
       <head>
         {/* JSON-LD Structured Data */}
         <script
@@ -118,7 +118,7 @@ export default function RootLayout({
               '@type': 'Person',
               name: 'Mithun Thomas',
               url: 'https://mithunthomas.vercel.app',
-              image: 'https://mithunthomas.vercel.app/mithun_hero.png',
+              image: 'https://mithunthomas.vercel.app/mithun_hero.webp',
               description: 'Full Stack Developer specializing in building modern web applications with React, Next.js, Node.js, and AI integration.',
               jobTitle: 'Full Stack Developer',
               location: {
