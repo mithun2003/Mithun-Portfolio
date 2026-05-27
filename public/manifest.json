@@ -10,10 +10,9 @@
   "orientation": "portrait-primary",
   "icons": [
     {
-      "src": "/favicon.svg",
-      "sizes": "any",
-      "type": "image/svg+xml",
-      "purpose": "any"
+      "src": "/icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
     }
   ],
   "categories": ["business", "technology"],
@@ -21,13 +20,13 @@
     {
       "src": "/mithun_hero.webp",
       "sizes": "540x720",
-      "type": "image/png",
+      "type": "image/webp",
       "form_factor": "narrow"
     },
     {
       "src": "/mithun_hero.webp",
       "sizes": "1280x720",
-      "type": "image/png",
+      "type": "image/webp",
       "form_factor": "wide"
     }
   ],
@@ -39,9 +38,9 @@
       "url": "https://mithunthomas.vercel.app/#work",
       "icons": [
         {
-          "src": "/favicon.svg",
-          "sizes": "any",
-          "type": "image/svg+xml"
+          "src": "/icon.png",
+          "sizes": "512x512",
+          "type": "image/png"
         }
       ]
     },
@@ -52,9 +51,9 @@
       "url": "https://mithunthomas.vercel.app/#contact",
       "icons": [
         {
-          "src": "/favicon.svg",
-          "sizes": "any",
-          "type": "image/svg+xml"
+          "src": "/icon.png",
+          "sizes": "512x512",
+          "type": "image/png"
         }
       ]
     }

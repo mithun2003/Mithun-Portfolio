@@ -121,12 +121,11 @@ mithun-portfolio/
 ├── hooks/                     # Custom React hooks
 ├── styles/                    # Global CSS
 ├── public/
-│   ├── favicon.svg           # Favicon
+│   ├── favicon.ico           # Favicon
 │   ├── robots.txt            # Robots.txt for crawlers
 │   ├── manifest.json         # PWA manifest
 │   ├── mithun_hero.webp       # Hero image
 │   ├── mithun_about.webp      # About section image
-│   ├── signsync-hero.svg     # SignSync project image
 │   └── artistkashi-hero.webp  # ArtistKashi project image
 ├── next.config.mjs           # Next.js configuration
 ├── tailwind.config.ts        # Tailwind CSS config
@@ -252,7 +251,7 @@ Edit `styles/globals.css` to change the color scheme:
 Replace images in `/public/`:
 - `mithun_hero.webp` - Hero section image
 - `mithun_about.webp` - About section image
-- `favicon.svg` - Website favicon
+- `favicon.ico` - Website favicon
 
 ---
 

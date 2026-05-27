@@ -5,11 +5,11 @@ import { CursorFollower } from '@/components/cursor-follower'
 import { FloatingParticles } from '@/components/floating-particles'
 import './globals.css'
 
-const geist = Geist({ 
+const geist = Geist({
   subsets: ["latin"],
   variable: '--font-geist-sans'
 });
-const geistMono = Geist_Mono({ 
+const geistMono = Geist_Mono({
   subsets: ["latin"],
   variable: '--font-geist-mono'
 });
@@ -21,6 +21,7 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://mithunthomas.vercel.app'),
   title: 'Mithun Thomas — Full Stack Developer & AI Specialist',
   description: 'Full Stack Developer specializing in building modern web applications with React, Next.js, Node.js, and AI integration. Based in Kerala, India. Available for remote work worldwide.',
   keywords: [
@@ -87,13 +88,9 @@ export const metadata: Metadata = {
     creator: '@mithun_thomas._',
   },
   icons: {
-    icon: [
-      {
-        url: '/favicon.svg',
-        type: 'image/svg+xml',
-      },
-    ],
-    apple: '/favicon.svg',
+    icon: '/favicon.ico',
+    shortcut: '/favicon.ico',
+    apple: '/icon.png',
   },
   manifest: '/manifest.json',
   verification: {
