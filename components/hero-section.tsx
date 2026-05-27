@@ -119,6 +119,7 @@ export function HeroSection() {
                 priority
                 quality={85}
                 sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 600px"
+                fetchPriority="high"
               />
             </div>
           </motion.div>
